@@ -7,6 +7,8 @@ En este repositorio encontrarás una lista de temas que te servirán para comenz
 Este proyecto esta en desarrollo por lo que espera ver cambios. 
 Nota: utilizaré términos en inglés y en español todo el tiempo. La gran mayoría de la información y documentación esta disponible en inglés y mis fuentes generalmente será en inglés.
 
+![cat-coding](https://hostrider.com/images/tw.png)
+
 ## Desarrollo web  (FRONT END)
 
 Una de las carreras mas nobles (en mi opinión) para entrar al mundo tech, debido a que hay una alta demanda de programadores en esta área, el feedback es casi inmediato (tanto si lo estas haciendo bien como si lo estas haciendo mal).
@@ -111,17 +113,115 @@ Los elementos principales que necesitas para comenzar tu carrera como desarrolla
     const status = age >= 18 ? 'adult' : 'minor'; // si su edad es mayor o igual a 18 status sería 'adult' de lo contrario su valor seria 'minor';
     const canHaveDrivingLicence = status === 'adult'; // Esta es una evaluacion binaria, el valor de canHaveDrivingLicense sería, `true` si status es igual a 'adult'
     ``` 
-  - Asignamiento
-  - Comparativos
-  - Aritmeticos
-  - Bitwise logical operator
-  - Operadores lógicos
-  - Operadores de string
-  - Condicionales (ternarios)
-  - Comma operator
+  - [Asignamiento](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators)
+    Asigna un valor al operante izquierdo con el valor pasado del lado derecho
+    `const car = 'carro'`
+      Tambien existe el asignamiento con suma, asignamiento con resta, con multiplicacion, división, residuos entre otros.
+  - [Comparativos](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators): retorna verdadero o falso si el elemento de la izquierda comparados entre si, dependiendo de la evaluacion da true o false.
+  ```js
+  3 === 3// true
+  ```
+    `==` equal
+    `!=`not equal
+    `===` strict equal
+    `!==` strict not equal
+    `>` greater than
+    `>=` greater than o equal
+    `<` less than
+    `<=` less than or equal
+  - Aritmeticos: Operadores que toman valores numericos y retornar un valor numerico:
+  ```js
+    `+` suma 3 + 3 // 6
+    `-` resta 3 -3 // 0
+    `*` multiplicación 3 * 3 // 9
+    `/` división 3 / 3 // 1
+    `%` residuo 3 % 3 // 0 
+    // El residuo o remainder es un operador binario que retorna lo que sobra cuando divides 2 numeros, ejemplo, 3 / 3 es igual a 1, no sobra ningun numero. 12 % 5, se traduciria a 12 entre 5, cabe 2 veces y sobran 2, entonces 12 % 4 = 2
+
+    `++` Incremento 3++ // 4, toma el numero y suma 1
+    `--` Decremento 3-- // 2, Toma el numero y resta 1
+    `-` Negación unaria -3 // -3, Numero negativos
+    `+` Incremento unario +3 // 3, Intenta convertir el operando en numero si no lo es ya.
+    +true // 1
+    `**` Exponente 2 ** 3// 8, calcula la base con el exponente, la base seria 2 y el exponente 3, es decir 2 * 2 * 2 = 8
+```
+  - Operadores lógicos: Usualmente utilizados con boleanos, aunque tambien pueden ser usados con numeros o strings o combinados.
+![Operadores logicos](https://content.codecademy.com/practice/art-for-practice/new-pngs/Boolean-operators-dk.png)
+
+4. [Condicionales](https://www.w3schools.com/js/js_if_else.asp)
+- if: Para especificar que un bloque de codigo debe ser executado (se tiene que cumplir la condicion);
+```js
+const age = 33;
+if(age > 18) {
+  console.log('wow you are an adult')
+}
+```
+- else: Para especificar que un bloque de codigo se execute si la condición anterior no se cumplió
+```js
+const age = 12;
+if(age > 18) {
+  console.log('wow you are an adult')
+} else {
+  console.log('you are just a child')
+}
+```
+- else if: Para especificar una nueva condición, si la primera condición no se cumple
+```js
+const age = 85;
+if(age > 18 && age < 60) {
+  console.log('wow you are an adult')
+} else if (age > 60 ) {
+  console.log('wow, you are really old')
+} else {
+  console.log('you are just a child')
+}
+```
+- ternario: Retorna un valor si la condición se cumple, si no retorna el segundo valor
+```js
+const age = 12;
+age > 18 
+  ? console.log('wow you are an adult') 
+  : console.log('you are just a child')
+
+```
+- switch case: Especifica varias alternativas que se ejecuten dependiendo de la condición que se cumpla.
+```js
+const expr = 'Papayas';
+switch (expr) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a dollars');
+    break;
+  case 'Mangoes':
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a dollars');
+    // expected output: "Mangoes and papayas are $2.79 a dollars"
+    break;
+  default:
+    console.log(`Sorry, we are out of ${expr}.`);
+}
+```
 
 Convenciones de código:
 - cammelCase
 - PascalCase
 - snake_case
 
+## Node
+## Git 
+
+## Github
+
+## Metodo de trabajo agile
+> Agile Methodology is a people-focused, results-focused approach to software development that respects our rapidly changing world. It’s centered around adaptive planning, self-organization, and short delivery times. It’s flexible, fast, and aims for continuous improvements in quality, using tools like Scrum and eXtreme Programming.
+
+### Scrum
+
+## Proyectos/Portafolio
+
+## Librerias
+
+## Frameworks
+
+## Soft skills
+
+## Entrevistas de trabajo
