@@ -77,10 +77,10 @@ Los elementos principales que necesitas para comenzar tu carrera como desarrolla
   // imprime: 'Hello
   greeting // error, greeting fue declarada dentro de la funcion printHello, ese valor solo existe dentro de la función, no afuera
   ```
-  - let: Se utiliza para declarar variables y guardar valores en las variables. Let si puede ser declarada sin asignarle un valor, tabien se puede reasignarle un valor.
+  - let: Se utiliza para declarar variables y guardar valores en las variables. Let si puede ser declarada sin asignarle un valor, tambien se puede reasignarle un valor.
   ```javascript
-  const let = 'auto'; // success
-  const tu; // success
+  let car = 'auto'; // success
+  let tu; // success
   car = 'carro'; // success
   // Note: Una constante no puede ser declara sin valor.
   ```
